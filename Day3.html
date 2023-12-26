@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output methods</title>
+    <style>
+        #myId{
+            color:white;
+            background-color: maroon;
+            padding: 7px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myId"></div>
+    <script>
+        //Method-1 To Browser[Will be visible in console]
+         var nm="Bharat Tulsani"
+        // console.log(nm);
+
+        //Method-2 To alert Box
+        // alert(`Hello Mr ${nm}`)
+
+        //Method-3,Browser Window
+        // document.write(nm)
+
+        //Method-4 ,Inside HTML Element
+        document.getElementById("myId").innerHTML=`Hello Mr ${nm}`;
+    </script>
+</body>
+</html>
